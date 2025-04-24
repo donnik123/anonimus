@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анонимное Сообщество</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #00ff88;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+            position: relative;
+            z-index: 10;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: #00ff88;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #00ff88;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
+        .hero-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+            transition: transform 0.3s;
+        }
+        .hero-img:hover {
+            transform: scale(1.05);
+        }
+        .member {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.7);
+        }
+        .member h3 {
+            margin: 0;
+            color: #00ff88;
+            font-size: 1.5em;
+        }
+        .member p {
+            color: #ffffff;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 255, 136, 0.3);
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
+            }
+            to {
+                text-shadow: 0 0 20px #00ff88, 0 0 30px #00ff88, 0 0 40px #00ff88;
+            }
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1em;
+            }
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Анонимное Сообщество</h1>
+    </header>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#members">Сотрудники</a>
+        <a href="https://discord.gg/m7kPxXAnFe" target="_blank">Discord</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Добро пожаловать в Анонимное Сообщество!</h2>
+            <p>Мы - элита анонимов, объединённая в Discord. Под масками скрываются легенды, готовые перевернуть цифровой мир!</p>
+            <img src="https://cdn.forbes.ru/files/story_images/maxresdefault_0.jpg__1623241141__42446.jpg"  class="hero-img">
+        </section>
+        <section id="members">
+            <h2>Наши Сотрудники</h2>
+            <div class="member">
+                <h3>Анонимный Аноним</h3>
+                <p>Таинственный лидер, чья личность - загадка для всех.</p>
+            </div>
+            <div class="member">
+                <h3>Анонимный Модератор</h3>
+                <p>Хранитель порядка в тенях цифрового мира.</p>
+            </div>
+            <div class="member">
+                <h3>Анонимный Кунимен</h3>
+                <p>Мифическая фигура, чьи подвиги обсуждают шёпотом.</p>
+            </div>
+            <div class="member">
+                <h3>Анонимный Хацкер</h3>
+                <p>Код - его оружие, а сеть - его поле боя.</p>
+            </div>
+            <div class="member">
+                <h3>Анонимный Tessaylad</h3>
+                <p>Создатель мемов, чьи шутки взрывают чаты.</p>
+            </div>
+            <div class="member">
+                <h3>Анонимный Мастурбатор</h3>
+                <p>Самый скрытный, его действия - тайна за семью печатями.</p>
+            </div>
+            <div class="member">
+                <h3>Анонимный Костян</h3>
+                <p>Душа компании, чей ник гремит в голосовых каналах.</p>
+            </div>
+            <div class="member">
+                <h3>Анонимный Фортнайтер</h3>
+                <p>Чемпион баттл-рояля, скрывающийся под маской.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>© 2025 Анонимное Сообщество. Мы в тенях, но всегда рядом.</p>
+    </footer>
+</body>
+</html>
